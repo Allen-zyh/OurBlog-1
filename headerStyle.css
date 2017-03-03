@@ -1,0 +1,65 @@
+header *{
+	border:1px solid black;
+}
+header img{
+	display: block;
+	margin-top: 100px;
+	margin-right: 70px;
+	margin-left: 70px;
+	height: 150px;
+	text-align: center;
+}
+header ul{
+	background-color: #72e0e0;
+	height: 125px;
+	line-height: 125px;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+	padding: 0px;
+}
+header ul :first-child{/*选择元素的第一个孩子的伪类需要有空格*/
+	width:120px;
+	margin-left: 111.5px;
+}
+header ul :last-child{/*最后一个孩子伪类同理*/
+	margin-right: 111.5px;
+}
+header ul li{
+	position: relative;/*让before伪类可以使用absolute进行定位，所以使用relative*/
+	text-align: center;
+	margin-left: 35px;
+	margin-right: 35px;
+	font-size: 30px;
+	border: none;
+	display: inline-block;
+	transition: color ease-out .75s;
+}
+header ul li:hover{
+	color:#f11515;
+}
+header ul li::before{
+	content:"";
+	display: block;
+	height: none;
+	width: none;
+	color: #72e0e0;
+	border-width: 0px;
+	border-color: #72e0e0;
+	transition: border-color 1s ease-in,transform linear 120s;
+}
+header ul li:hover::before{/*hover伪类不能有空格*/
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height:120px;
+	width: 120px;
+	border-width:  3px;
+	border-style: solid;
+	border-color: rgba(255,255,255,.5);
+	border-radius: 100% 100% 100% 100%;
+	box-shadow: 2px 2px 2px #105299;
+	transform: rotate(36000deg);
+}

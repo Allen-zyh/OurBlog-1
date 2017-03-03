@@ -1,0 +1,35 @@
+#jstd{
+	padding-top: 10px;
+	height:300px;
+	background-color: silver;
+	clear: both;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+#jstd img{
+	float: left;
+	height: 100px;
+	width: 300px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	border: 2px solid black;
+	text-align: center;
+}
+#jstd ul{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 330px;
+}
+#jstd li{
+	list-style: square;
+	height: 33px;/*chrome浏览器在计算高度时包括了margin*/
+	margin-top: 1.5px;
+	margin-bottom: 1.5px;
+	width:80%;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	font-size: 15px;
+	margin-right: 0;
+}
