@@ -1,10 +1,43 @@
 #topLeft{
-	height :90px;
-	width :90px;
-	position: fixed;
+  /*box-shadow:1px 1px 4px 2px #ebd372;*/
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  height: 0px;
+  width:0px;
+  border-left: solid rgba(255,255,255,0);
+  border-top: solid rgba(255,255,255,0);
+  border-bottom: solid rgba(245,242,178,1);
+  border-right: solid rgba(245,242,178,1);
+  overflow: hidden;
+  z-index:4/*Z-index对父子关系无效*/
+}
+#time{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100px;
+	height:100px;
+	z-index: 2;
+}
+#zhedang1{
+	background-color: white;
+	display: block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100px;
+	height:100px;
+	z-index:3;
+}
+#zhedang2{
+	background-color: white;
+	display: block;
+	position: absolute;
 	top: 0px;
 	left: 0px;
-	border-right: 2px solid blue;
-	border-bottom: 2px solid blue;
-	border-radius: 0px 0px -100% 0px; 
+	width: 100px;
+	height: 100px;
+	z-index:3;
 }
+

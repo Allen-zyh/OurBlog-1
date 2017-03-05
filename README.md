@@ -1,2 +1,2 @@
-# OurBlog
-Our blog，and the owner is a manager account
+# ourBlog
+a blog the owner is the manager account.
